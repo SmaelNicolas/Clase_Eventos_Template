@@ -3,6 +3,7 @@ import { EventsAutomatic } from "../components/Clase-10/EventsAutomatic/EventsAu
 import { EventsManuals } from "../components/Clase-10/EventsManual/EventsManual";
 import { Form } from "../components/Clase-10/Form/Form";
 import { InputVocals } from "../components/Clase-10/InputVocals/InputVocals";
+import { Intercambiabilidad } from "../components/Clase-10/Intercambiabilidad/Intercambiabilidad";
 import { SelectApi } from "../components/Clase-10/SelectApi/SelectApi";
 import { SelectContainer } from "../components/Clase-10/SelectContainer/SelectContainer";
 import { ItemDetailContainer } from "../components/ItemDetailContainer/ItemDetailContainer";
@@ -23,6 +24,10 @@ export const MyRoutes = () => {
 			<Route path="/inputvocals" element={<InputVocals />} />
 			<Route path="/select" element={<SelectContainer />} />
 			<Route path="/selectapi" element={<SelectApi />} />
+			<Route
+				path="/intercambiabilidad"
+				element={<Intercambiabilidad />}
+			/>
 		</Routes>
 	);
 };

@@ -12,6 +12,7 @@ const urls = [
 	{ id: 7, name: "Vocals", path: "inputvocals" },
 	{ id: 8, name: "Select", path: "select" },
 	{ id: 9, name: "Select Api", path: "selectapi" },
+	{ id: 10, name: "Intercambiabilidad", path: "intercambiabilidad" },
 ];
 
 export const Navbar = () => {
