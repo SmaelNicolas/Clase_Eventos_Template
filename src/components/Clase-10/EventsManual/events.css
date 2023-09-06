@@ -1,0 +1,21 @@
+.box--click {
+	width: 300px;
+	height: 300px;
+	background: black;
+	transition: all 0.3s ease-in-out;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	cursor: pointer;
+}
+.box--click:hover {
+	transition: all 0.3s ease-in-out;
+	background: rgba(0, 0, 0, 0.891);
+}
+.box--click--text {
+	color: Yellow;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 20px;
+}

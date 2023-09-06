@@ -1,0 +1,34 @@
+.container--selects {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.container--select {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.select--box {
+	width: 300px;
+	height: 300px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: 1px solid rgba(0, 0, 0, 0.587);
+}
+
+.dog {
+	background-image: url("/dog.jpg");
+}
+
+.cat {
+	background-image: url("/cat.jpg");
+}
+.bird {
+	background-image: url("/bird.jpg");
+}

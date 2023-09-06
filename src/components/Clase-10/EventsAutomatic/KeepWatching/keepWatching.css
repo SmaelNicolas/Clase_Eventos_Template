@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200");
+
+#box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 400px;
+	height: 200px;
+	color: white;
+	font-family: "Raleway";
+	font-size: 2.5rem;
+	cursor: pointer;
+	flex-direction: column;
+	gap: 30px;
+}
+.gradient-border {
+	--borderWidth: 3px;
+	background: #1d1f20;
+	position: relative;
+	border-radius: var(--borderWidth);
+}
+.gradient-border:after {
+	content: "";
+	position: absolute;
+	top: calc(-1 * var(--borderWidth));
+	left: calc(-1 * var(--borderWidth));
+	height: calc(100% + var(--borderWidth) * 2);
+	width: calc(100% + var(--borderWidth) * 2);
+	background: linear-gradient(
+		60deg,
+		#f79533,
+		#f37055,
+		#ef4e7b,
+		#a166ab,
+		#5073b8,
+		#1098ad,
+		#07b39b,
+		#6fba82
+	);
+	border-radius: calc(2 * var(--borderWidth));
+	z-index: -1;
+	-webkit-animation: animatedgradient 3s ease alternate infinite;
+	animation: animatedgradient 3s ease alternate infinite;
+	background-size: 300% 300%;
+}
+
+@-webkit-keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.custom-btn {
+	width: 130px;
+	height: 40px;
+	color: #fff;
+	border-radius: 5px;
+	padding: 10px 25px;
+	font-family: "Lato", sans-serif;
+	font-weight: 500;
+	background: transparent;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+	box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+		7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+	outline: none;
+}
+
+.btn-11 {
+	border: none !important;
+	background: rgb(251, 33, 117) !important;
+	background: linear-gradient(
+		0deg,
+		rgba(251, 33, 117, 1) 0%,
+		rgba(234, 76, 137, 1) 100%
+	) !important;
+	color: #fff !important;
+	overflow: hidden !important;
+}
+.btn-11:hover {
+	text-decoration: none;
+	color: #fff;
+}
+.btn-11:before {
+	position: absolute;
+	content: "";
+	display: inline-block;
+	top: -180px;
+	left: 0;
+	width: 30px;
+	height: 100%;
+	background-color: #fff;
+	animation: shiny-btn1 3s ease-in-out infinite;
+}
+.btn-11:hover {
+	opacity: 0.7;
+}
+.btn-11:active {
+	box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.3),
+		-4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+		inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+		inset 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+@-webkit-keyframes shiny-btn1 {
+	0% {
+		-webkit-transform: scale(0) rotate(45deg);
+		opacity: 0;
+	}
+	80% {
+		-webkit-transform: scale(0) rotate(45deg);
+		opacity: 0.5;
+	}
+	81% {
+		-webkit-transform: scale(4) rotate(45deg);
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: scale(50) rotate(45deg);
+		opacity: 0;
+	}
+}
