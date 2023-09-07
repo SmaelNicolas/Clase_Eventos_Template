@@ -8,11 +8,19 @@ export const Intercambiabilidad = ({
 		stock: 10,
 		title: "Gorra",
 	},
-	inputType = "input",
+	inputType = "button",
 }) => {
+	const ComponenteCount = inputType === "button" ? ButtonCount : InputCount;
+
+	const addToCart = () => {
+		console.log("AGregado al carrito");
+	};
+
 	return (
 		<div className="container--app">
 			<h2>Intercambiabilidad</h2>
+
+			<ComponenteCount onConfirm={addToCart} maxQuantity={item.stock} />
 
 			<ToastContainer />
 		</div>
